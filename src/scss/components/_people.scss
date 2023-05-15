@@ -1,0 +1,62 @@
+.people {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 125px;
+  left: calc(50% - 25px);
+  width: 49px;
+  height: 273px;
+  background-color: $white;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+  cursor: default;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: $primary;
+  }
+
+  &__item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 18px;
+    }
+
+    &:focus {
+      font-size: 18px;
+    }
+
+    &:active {
+      color: $secondary;
+    }
+
+    // &:checked .people__label {
+    //   color: $secondary;
+    // }
+  }
+
+  &__input {
+    position: fixed;
+    transform: scale(0);
+
+    &:checked + .people__label {
+      color: $secondary;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+
+    // &:checked {
+    //   color: $secondary;
+    // }
+  }
+}

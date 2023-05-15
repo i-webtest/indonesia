@@ -1,0 +1,164 @@
+.photo {
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 45px;
+  }
+
+  @include laptop {
+    padding-top: 57px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 75px;
+  }
+
+  &__container {
+    margin-bottom: 25px;
+    
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  
+    @include laptop {
+      margin-bottom: 60px;
+    }
+  
+    @include desktop {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include laptop {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 418px;
+
+    @include laptop {
+      max-width: 540px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slide.swiper-slide {
+    
+    @include laptop {
+      width: 822px;
+    }
+
+    @include desktop {
+      width: 1110px;
+    }
+  }
+
+  &__slider-button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    color: $white;
+    background-color: transparent;
+    transition: all .3s ease-in;
+    border-radius: 50%;
+    border: 1px solid $white;
+    outline: none;
+    cursor: pointer;
+
+    @include tablet {
+      top: 49%;
+      width: 90px;
+      height: 90px;
+    }
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+
+    &:focus {
+      background-color: rgba(249, 249, 249, 0.3);
+    }
+
+    &:active {
+      background-color: $white;
+      border-color: $secondary;
+    }
+
+    &:hover .photo__arrow_prev {
+      transform: translate(-75%, -50%);
+    }
+
+    &:hover .photo__arrow_next {
+      transform: translate(-25%, -50%);
+    }
+
+    &_prev {
+      left: 25px;
+
+      @include tablet {
+        left: 34px;
+      }
+
+      @include laptop {
+        left: 40px;
+      }
+
+      @include desktop {
+        left: 130px;
+      }
+    }
+
+    &_next {
+      right: 25px;
+
+      @include tablet {
+        right: 34px;
+      }
+
+      @include laptop {
+        right: 40px;
+      }
+
+      @include desktop {
+        right: 130px;
+      }
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

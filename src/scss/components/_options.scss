@@ -1,0 +1,51 @@
+.options {
+  padding: 20px 20px;
+  position: absolute;
+  z-index: 1;
+  top: 125px;
+  background-color: $white;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: $primary;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: $primary;
+  }
+
+  &__input {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__submit {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: $white;
+    background-color: $secondary;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin-left: auto;
+  }
+}

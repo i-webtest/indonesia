@@ -1,0 +1,55 @@
+$primary: #303030;
+$secondary: #FCB500;
+$border: #AFAFAF;
+$border-focus: #C2900F;
+$bg-focus: #F3C858;
+$bg-active: #D09600;
+
+$white: #FFF;
+
+$mobile: 320px;
+$middle: 400px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1280px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin middle {
+  @media (min-width: #{$middle}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// @mixin font($name, $weight) {
+//   font: {
+//     family: $name;
+//     weight: $weight;
+//     display: swap;
+//   }
+//   src: url("../fonts/#{ $name }-#{ $weight }.woff2")  format("woff2"),
+//     url("../fonts/#{ $name }-#{ $weight }.woff")  format("woff"),
+// }
+

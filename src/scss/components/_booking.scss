@@ -1,0 +1,381 @@
+.booking {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-top: 39px;
+    padding-bottom: 102px;
+  }
+
+  @include laptop {
+    padding-top: 51px;
+    padding-bottom: 119px;
+  }
+
+  @include desktop {
+    padding-top: 67px;
+    padding-bottom: 150px;
+  }
+}
+
+.form {
+  padding: 20px 10px 24px;
+  margin: 0 auto;
+  max-width: 380px;
+  border: 1px solid $border;
+  border-radius: 10px;
+
+  @include tablet {
+    padding: 39px 60px 39px;
+    max-width: 700px;
+    border-radius: 20px;
+  }
+
+  @include laptop {
+    max-width: 940px;
+    border-radius: 30px;
+    padding: 60px 80px 69px 80px;
+  }
+
+  @include desktop {
+    max-width: 980px;
+    padding: 60px 100px 62px 100px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+    
+    @include tablet {
+      margin-bottom: 40px;
+    }
+    
+    @include laptop {
+      margin-bottom: 59px;
+    }
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__fieldset-select {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+    @include tablet {
+      gap: 35px;
+      width: 580px;
+      margin-bottom: 28px;
+    }
+    
+    @include laptop {
+      justify-content: space-between;
+      gap: 59px;
+      width: 780px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid $border;
+    border-radius: 8px;
+
+    &:disabled {
+      color: $border;
+    }
+
+    &:hover {
+      border-color: $secondary;
+    }
+
+    &:focus {
+      border-color: $border-focus;
+    }
+  
+    &:active {
+      border-color: $secondary;
+    }
+
+    
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include laptop {
+      gap: 12px;
+      font-size: 16px;
+      border-radius: 12px;
+    }
+  }
+
+  &__label-select {
+    position: relative;
+    outline: none;
+    padding: 8px 15px 14px 9px;
+
+    &:nth-child(1) {
+      padding: 8px 15px 14px 14px;
+
+      @include tablet {
+        padding: 12px 15px 18px 13px;
+      }
+
+      @include laptop {
+        padding: 12px 16px 12px 13px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include tablet {
+        padding: 12px 15px 18px 8px;
+      }
+
+      @include laptop {
+        padding: 12px 20px 12px 8px;
+      }
+
+      & .form__label-arrow {
+        @include laptop {
+          right: 21px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      @include tablet {
+        padding: 12px 15px 18px 4px;
+      }
+
+      @include laptop {
+        padding: 12px 25px 12px 3px;
+      }
+
+      & .form__label-arrow {
+        @include laptop {
+          right: 26px;
+        }
+      }
+    }
+
+    &:active {
+      color: $secondary;
+    }
+
+    &:active .form__label-placeholder {
+      color: $secondary;
+    }
+
+    &:hover .form__label-arrow {
+      color: $secondary;
+    }
+
+    &:focus .form__label-arrow {
+      color: $secondary;
+    }
+  
+    @include tablet {
+      width: 170px;
+    }
+    
+    @include laptop {
+      width: 221px;
+    }
+  }
+
+  &__label-placeholder {
+    width: 105px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    color: $border;
+    opacity: 0.7;
+
+    @include tablet {
+      width: 123px;
+      font-size: 14px;
+    }
+
+    @include laptop {
+      width: 140px;
+      font-size: 16px;
+    }
+  }
+
+  &__label-arrow {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+
+    @include tablet {
+      top: 34px;
+      right: 15px;
+    }
+  }
+
+  &__select {
+  
+    @include tablet {}
+    
+    @include laptop {}
+  
+    @include desktop {}
+  }
+
+  &__fieldset-input {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 30px 18px;
+      width: 100%;
+      margin-bottom: 22px;
+    }
+
+    @include laptop {
+      justify-content: space-between;
+      margin-bottom: 29px;
+    }
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__label-input {
+    padding: 8px 8px 13px;
+    outline: none;
+
+    &:nth-child(1) {
+      @include tablet {
+        width: 100%;
+        padding: 11px 13px 18px;
+      }
+
+      @include laptop {
+        padding: 13px 13px 33px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include tablet {
+        flex-basis: 280px;
+        padding: 12px 13px 20px;
+      }
+
+      @include laptop {
+        flex-basis: 360px;
+        padding: 11px 13px 33px;
+      }
+    }
+
+    &:nth-child(3) {
+      @include tablet {
+        flex-basis: 280px;
+        padding: 12px 20px 20px;
+      }
+
+      @include laptop {
+        flex-basis: 360px;
+        padding: 11px 25px 33px;
+      }
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    
+    &::placeholder {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 130%;
+      color: $border;
+      opacity: 0.7;
+
+      @include tablet {
+        font-size: 14px;
+      }
+
+      @include laptop {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__submit-wrapper {
+    
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__result-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    @include tablet {
+      gap: 18px;
+      margin-bottom: 0;
+    }
+
+    @include laptop {
+      gap: 10px;
+    }
+  }
+
+  &__result-total {
+    font-weight: 700;
+    font-size: 18px;
+
+    @include laptop {
+      font-size: 20px;
+    }
+  }
+
+  &__submit {
+    display: block;
+    padding: 9px 29px;
+    margin: 0 auto;
+
+    @include tablet {
+      position: relative;
+      top: 2px;
+      padding: 14px 56px;
+      margin: 0;
+    }
+
+    @include laptop {
+      top: -6px;
+      padding: 20px 80px;
+    }
+
+    @include desktop {
+      top: 4px;
+      padding: 27px 111px;
+    }
+  }
+}

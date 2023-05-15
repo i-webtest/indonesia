@@ -1,0 +1,238 @@
+.travel {
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  @include laptop {
+    padding-top: 40px;
+    padding-bottom: 118px;
+  }
+
+  @include desktop {
+    padding-bottom: 148px;
+  }
+
+  &__container {
+    background-image: url('../img/travel/map-mobile.png');
+    background-image: image-set(
+      url('../img/travel/map-mobile@2x.webp') 2x,
+      url('../img/travel/map-mobile.webp') 1x,
+      url('../img/travel/map-mobile@2x.avif') 2x,
+      url('../img/travel/map-mobile.avif') 1x,
+      url('../img/travel/map-mobile@2x.png') 2x,
+      url('../img/travel/map-mobile.png') 1x
+    );
+    background-position: bottom;
+    background-size: 270px 235px;
+    background-repeat: no-repeat;
+    padding-bottom: 260px;
+
+    @include tablet {
+      background-image: url('../img/travel/map-tablet.png');
+      background-image: image-set(
+        url('../img/travel/map-tablet@2x.webp') 2x,
+        url('../img/travel/map-tablet.webp') 1x,
+        url('../img/travel/map-tablet@2x.avif') 2x,
+        url('../img/travel/map-tablet.avif') 1x,
+        url('../img/travel/map-tablet@2x.png') 2x,
+        url('../img/travel/map-tablet.png') 1x
+      );
+      background-size: 380px 320px;
+      padding-bottom: 349px;
+    }
+
+    @include laptop {
+      height: 799px;
+      background-image: url('../img/travel/map-laptop.png');
+      background-image: image-set(
+        url('../img/travel/map-laptop@2x.webp') 2x,
+        url('../img/travel/map-laptop.webp') 1x,
+        url('../img/travel/map-laptop@2x.avif') 2x,
+        url('../img/travel/map-laptop.avif') 1x,
+        url('../img/travel/map-laptop@2x.png') 2x,
+        url('../img/travel/map-laptop.png') 1x
+      );
+      background-size: 319px 268px;
+      background-position: bottom 139px right 42px;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      height: 857px;
+      background-image: url('../img/travel/map-desktop.png');
+      background-image: image-set(
+        url('../img/travel/map-desktop@2x.webp') 2x,
+        url('../img/travel/map-desktop.webp') 1x,
+        url('../img/travel/map-desktop@2x.avif') 2x,
+        url('../img/travel/map-desktop.avif') 1x,
+        url('../img/travel/map-desktop@2x.png') 2x,
+        url('../img/travel/map-desktop.png') 1x
+      );
+      background-size: 480px 410px;
+      background-position: bottom 68px right 42px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
+
+    @include desktop {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 380px;
+    margin-bottom: 26px;
+
+    @include tablet {
+      margin-bottom: 42px;
+    }
+
+    @include laptop {
+      max-width: 540px;
+      margin-bottom: 63px;
+    }
+
+    @include desktop {
+      margin-bottom: 83px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 25px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      width: 1px;
+      height: calc(100% - 20px);
+      background-color: $secondary;
+
+      @include tablet {
+        left: 14px;
+        width: 2px;
+      }
+    }
+  }
+
+  &__item {
+    // min-height: 21px;
+    // margin-bottom: 25px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @include tablet {
+        margin-bottom: 44px;
+      }
+
+      @include laptop {
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    text-align: left;
+    padding-left: 28px;
+
+    @include tablet {
+      padding-left: 100px;
+    }
+    
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 11px;
+      height: 11px;
+      background-color: $secondary;
+      border-radius: 50%;
+
+      @include tablet {
+        left: 6px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &.active::before {
+      transition: transform .3s ease;
+      transform: scale(1.6);
+
+      @include tablet {
+        transform: scale(1.7);
+      }
+    }
+
+    
+  }
+
+  &__item-text {
+    position: relative;
+    top: 15px;
+    max-width: 545px;
+    min-height: 196px;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+    padding-left: 28px;
+
+    @include tablet {
+      top: 23px;
+      max-width: 615px;
+      min-height: 124px;
+      padding-left: 100px;
+    }
+
+    @include laptop {
+      top: 16px;
+      max-width: 545px;
+      min-height: 232px;
+    }
+
+    @include desktop {
+      max-width: 560px;
+    }
+
+    // &.active {
+    //   min-height: 196px;
+
+    //   @include tablet {
+    //     min-height: 124px;
+    //   }
+
+    //   @include laptop {
+    //     min-height: 232px;
+    //   }
+    // }
+  }
+}
+
+// .open {
+//   height: 196px;
+// }
+
+.hidden {
+  display: none;
+}

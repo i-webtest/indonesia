@@ -1,0 +1,51 @@
+.navigation {
+  position: absolute;
+  top: 44px;
+  right: 47px;
+  display: none;
+  background-color: $secondary;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 14px 0px;
+  padding: 20px 25px 20px 20px;
+
+  @include tablet {
+    top: 63px;
+    right: 72px;
+    border-radius: 20px 0px;
+    padding: 30px 30px 30px 30px;
+  }
+
+  @include laptop {
+    top: 71px;
+    right: 77px;
+    padding: 30px 38px 30px 35px;
+  }
+
+  @include desktop {
+    top: 97px;
+    right: 169px;
+  }
+
+  &__active {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+    @include tablet {
+      gap: 20px;
+    }
+
+    @include laptop {
+      gap: 15px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    color: $white;
+  }
+}

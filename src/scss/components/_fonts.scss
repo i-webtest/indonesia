@@ -1,0 +1,67 @@
+// @font-face {
+//   @include font(Montserrat, 400)
+// }
+
+// @font-face {
+//   @include font(Montserrat, 500)
+// }
+
+// @font-face {
+//   @include font(Montserrat, 700)
+// }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/nunito-v25-cyrillic_latin-200.woff2') format('woff2'),
+    url('../fonts/nunito-v25-cyrillic_latin-200.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/nunito-v25-cyrillic_latin-300.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/nunito-v25-cyrillic_latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v25-cyrillic_latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/nunito-v25-cyrillic_latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/nunito-v25-cyrillic_latin-600.woff2') format('woff2'),
+    url('../fonts/nunito-v25-cyrillic_latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v25-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/nunito-v25-cyrillic_latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v30-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/merriweather-v30-cyrillic_latin-regular.woff') format('woff');
+}

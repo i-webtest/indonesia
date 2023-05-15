@@ -1,0 +1,355 @@
+.footer {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url('../img/footer/footer-bg-mobile.jpg');
+  background-image: image-set(
+    url('../img/footer/footer-bg-mobile.avif'),
+    url('../img/footer/footer-bg-mobile.webp'),
+    url('../img/footer/footer-bg-mobile.jpg')
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74));
+  }
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/footer/footer-bg-tablet.jpg');
+    background-image: image-set(
+      url('../img/footer/footer-bg-tablet@2x.avif') 2x,
+      url('../img/footer/footer-bg-tablet.avif') 1x,
+      url('../img/footer/footer-bg-tablet@2x.webp') 2x,
+      url('../img/footer/footer-bg-tablet.webp') 1x,
+      url('../img/footer/footer-bg-tablet@2x.jpg') 2x,
+      url('../img/footer/footer-bg-tablet.jpg')
+    );
+  }
+
+  @include laptop {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-image: url('../img/footer/footer-bg-laptop.jpg');
+    background-image: image-set(
+      url('../img/footer/footer-bg-laptop@2x.avif') 2x,
+      url('../img/footer/footer-bg-laptop.avif') 1x,
+      url('../img/footer/footer-bg-laptop@2x.webp') 2x,
+      url('../img/footer/footer-bg-laptop.webp') 1x,
+      url('../img/footer/footer-bg-laptop@2x.jpg') 2x,
+      url('../img/footer/footer-bg-laptop.jpg')
+    );
+  }
+
+  @include desktop {
+    padding-top: 81px;
+    padding-bottom: 80px;
+    background-image: url('../img/footer/footer-bg-desktop.jpg');
+    background-image: image-set(
+      url('../img/footer/footer-bg-desktop@2x.avif') 2x,
+      url('../img/footer/footer-bg-desktop.avif') 1x,
+      url('../img/footer/footer-bg-desktop@2x.webp') 2x,
+      url('../img/footer/footer-bg-desktop.webp') 1x,
+      url('../img/footer/footer-bg-desktop@2x.jpg') 2x,
+      url('../img/footer/footer-bg-desktop.jpg')
+    );
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+      'logo logo'
+      'menu contacts'
+      'form form'
+      'copyright copyright'
+      'dev dev';
+    color: $white;
+
+    @include tablet {
+      grid-template-columns: 200px 180px 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 
+        'logo menu contacts'
+        '. form form'
+        'copyright . dev';
+    }
+
+    @include laptop {
+      grid-template-columns: 240px 240px 1fr;
+      grid-template-areas: 
+        'logo menu contacts'
+        '. menu form'
+        'copyright . dev';
+    }
+
+    @include desktop {
+      grid-template-columns: 260px 180px 280px 1fr;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: 
+        'logo menu contacts form'
+        'copyright menu . dev';
+      gap: 107px 20px;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    margin-bottom: 25px;
+
+    @include laptop {
+      position: relative;
+      top: 16px;
+    }
+
+    @include desktop {
+      top: 15px;
+    }
+  }
+
+  &__menu {
+    grid-area: menu;
+    width: 100px;
+    margin-bottom: 28px;
+
+    @include tablet {
+      padding-top: 8px;
+      margin-bottom: 40px;
+    }
+
+    @include laptop {
+      width: 140px;
+      padding-top: 0;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include laptop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav {}
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include laptop {
+      gap: 15px;
+    }
+  }
+
+  &__nav-item {}
+
+  &__nav-link {}
+
+  &__contacts {
+    grid-area: contacts;
+
+    @include tablet {
+      padding-top: 8px;
+    }
+
+    @include laptop {
+      padding-top: 0;
+      margin-bottom: 55px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    @include tablet {
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__contacts-item {}
+
+  &__contacts-link {}
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  &__social-item {}
+
+  &__social-link {
+    display: block;
+    line-height: 0;
+  }
+
+  &__feedback {
+    grid-area: form;
+    margin-bottom: 51px;
+
+    @include laptop {
+      margin-bottom: 62px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    width: 230px;
+    margin-bottom: -4px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+    @include laptop {
+      width: 280px;
+      margin-bottom: 2px;
+    }
+
+    @include desktop {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 1px;
+
+    @include tablet {
+      gap: 0px;
+    }
+  }
+
+  &__form-input {
+    width: 196px;
+    color: $white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $border;
+    outline: none;
+    padding: 10px 10px 5px 0px;
+
+    @include tablet {
+      width: 259px;
+      height: 52px;
+      padding: 10px 10px 10px 0;
+    }
+
+    @include laptop {
+      width: 300px;
+      height: 62px;
+    }
+
+    &::placeholder {
+      position: relative;
+      top: 6px;
+      font-size: 10px;
+      line-height: 130%;
+
+      @include tablet {
+        top: 2px;
+        font-size: 14px;
+      }
+
+      @include laptop {
+        top: 7px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__form-submit {
+    border-radius: 6px;
+    padding: 7px 21px;
+
+    & svg {
+      width: 23px;
+      height: 23px;
+
+      @include tablet {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    @include tablet {
+      padding: 5px 23px 5px 22px;
+    }
+
+    @include laptop {
+      border-radius: 8px;
+      padding: 5px 32px 5px 31px;
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 130%;
+    margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 16px;
+      padding-left: 9px;
+      margin-bottom: 0;
+    }
+
+    @include laptop {
+      padding-left: 0;
+    }
+  }
+
+  &__developer-list {
+    grid-area: dev;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 130%;
+
+    @include tablet {
+      justify-self: center;
+      font-size: 16px;
+      padding-left: 84px;
+    }
+
+    @include laptop {
+      justify-self: start;
+      padding-left: 0;
+    }
+  }
+}
