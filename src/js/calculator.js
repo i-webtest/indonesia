@@ -1,7 +1,15 @@
-// const formLabel = document.querySelectorAll('.tour__form-label');
-const formLabelDate = document.querySelector('.tour__form-label_date');
-const calendar = document.querySelector('.calendar');
+// const select = document.querySelector('.itc-select');
+// const select2 = document.querySelector('.itc-select2');
+// const btn = document.querySelector('.itc-select__btn');
+// const btn2 = document.querySelector('.itc-select2__btn');
 
-formLabelDate.addEventListener('click', () => {
-  calendar.style.display = 'block';
-});
+// const closeSelect = () => {
+//   select.classList.remove('itc-select_show');
+// };
+
+// const closeSelect2 = () => {
+//   select2.classList.remove('itc-select2_show');
+// };
+
+// btn.addEventListener('click', closeSelect);
+// btn2.addEventListener('click', closeSelect2);

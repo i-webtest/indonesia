@@ -29,6 +29,7 @@ const allJS = [
   'src/libs/inputmask.min.js',
   'src/libs/just-validate.production.min.js',
   'src/libs/swiper-bundle.min.js',
+  // 'src/libs/itc-custom-select.js',
 ];
 
 //задачи
