@@ -155,9 +155,27 @@
     }
   }
 
-  &__nav-item {}
+  &__nav-item {
+    
+  }
 
-  &__nav-link {}
+  &__nav-link {
+    outline: none;
+
+    @include laptop {
+      &:hover {
+        color: $bg-focus;
+      }
+
+      &:focus {
+        color: $bg-focus;
+      }
+    }
+
+    &:active {
+      color: $bg-active;
+    }
+  }
 
   &__contacts {
     grid-area: contacts;
@@ -194,7 +212,23 @@
 
   &__contacts-item {}
 
-  &__contacts-link {}
+  &__contacts-link {
+    outline: none;
+    
+    @include laptop {
+      &:hover {
+        color: $bg-focus;
+      }
+
+      &:focus {
+        color: $bg-focus;
+      }
+    }
+
+    &:active {
+      color: $bg-active;
+    }
+  }
 
   &__social-list {
     display: flex;
@@ -210,6 +244,26 @@
   &__social-link {
     display: block;
     line-height: 0;
+    outline: none;
+
+    @include laptop {
+      &:hover {
+        color: $bg-focus;
+      }
+
+      &:focus {
+        color: $bg-focus;
+      }
+    }
+
+    &:active {
+      color: $bg-active;
+    }
+  }
+
+  &__social-link svg {
+    
+    
   }
 
   &__feedback {
