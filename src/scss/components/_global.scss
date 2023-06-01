@@ -137,12 +137,6 @@ picture {
   transition: all .3s ease;
   padding: 7px 29px;
 
-  // &:hover {
-  //   background-color: $bg-focus;
-  // }
-
-  
-
   @include tablet {
     font-size: 14px;
     border-radius: 6px;
@@ -167,7 +161,6 @@ picture {
   &:focus {
     border-color: $border-focus;
     background-color: $bg-focus;
-    // outline-color: $outline-focus;
   }
 
   &:disabled {

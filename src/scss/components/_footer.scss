@@ -143,8 +143,6 @@
     }
   }
 
-  &__nav {}
-
   &__nav-list {
     display: flex;
     flex-direction: column;
@@ -153,10 +151,6 @@
     @include laptop {
       gap: 15px;
     }
-  }
-
-  &__nav-item {
-    
   }
 
   &__nav-link {
@@ -210,8 +204,6 @@
     }
   }
 
-  &__contacts-item {}
-
   &__contacts-link {
     outline: none;
     
@@ -239,8 +231,6 @@
     }
   }
 
-  &__social-item {}
-
   &__social-link {
     display: block;
     line-height: 0;
@@ -259,11 +249,6 @@
     &:active {
       color: $bg-active;
     }
-  }
-
-  &__social-link svg {
-    
-    
   }
 
   &__feedback {

@@ -200,89 +200,6 @@
         </div>
       </section>
 
-      <!-- <section class="tour" id="tour">
-        <div class="container tour__container">
-          <h2 class="tour__title title">Тур 14 дней</h2>
-
-          <p class="tour__subtitle subtitle">Думаем, показать тебе Индонезию лучше, чем рассказывать о&nbsp;ней.</p>
-
-          <p class="tour__description description">
-            Выбери удобные даты, укажи количество людей, и&nbsp;выбери дополнительные опции.
-          </p>
-
-          <div class="tour__form-wrapper">
-            <form action="" class="tour__form-form">
-              <fieldset class="tour__form-fieldset">
-                <label class="tour__form-label tour__form-label_date" for="date" data-tabs-handler="date" tabindex="0">
-                  Дата
-
-                  <span class="tour__form-placeholder tour__form-placeholder_date">Выбери дату путешествия</span>
-
-                  <svg
-                    class="tour__form-arrow"
-                    viewBox="0 0 14 14"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
-                    />
-                  </svg>
-                </label>
-
-                <label
-                  class="tour__form-label tour__form-label_people"
-                  for="people"
-                  data-tabs-handler="people"
-                  tabindex="0"
-                >
-                  Люди
-
-                  <span class="tour__form-placeholder tour__form-placeholder_people"
-                    >Укажи&nbsp;количество человек</span
-                  >
-
-                  <svg
-                    class="tour__form-arrow"
-                    viewBox="0 0 14 14"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
-                    />
-                  </svg>
-                </label>
-
-                <label
-                  class="tour__form-label tour__form-label_options"
-                  data-tabs-handler="options"
-                  for="options"
-                  tabindex="0"
-                >
-                  Опции
-
-                  <span class="tour__form-placeholder tour__form-placeholder_options">Выбери нужные опции</span>
-
-                  <svg
-                    class="tour__form-arrow"
-                    viewBox="0 0 14 14"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
-                    />
-                  </svg>
-                </label>
-              </fieldset>
-
-              <button class="tour__button button" type="submit">Узнать цену</button>
-            </form>
-          </div>
-        </div>
-      </section> -->
-
       <section class="tour" id="tour">
         <div class="container tour__container">
           <h2 class="tour__title title">Тур 14 дней</h2>
@@ -294,12 +211,11 @@
           </p>
 
           <div class="tour__form-wrapper">
-            <form action="" class="tour__form-form">
+            <form class="tour__form-form">
               <fieldset class="tour__form-fieldset">
                 <label class="tour__form-label tour__form-label_date" data-select="toggle" tabindex="0">
                   Дата
 
-                  <!-- Изначально не активна ни одна опция -->
                   <div class="itc-select" id="select-1">
                     <span class="itc-select__arrow">
                       <svg
@@ -318,7 +234,7 @@
                     <button
                       type="button"
                       class="itc-select__toggle"
-                      name="car"
+                      name="date"
                       value=""
                       data-select="toggle"
                       data-index="-1"
@@ -339,12 +255,7 @@
                         <li class="itc-select__option" data-select="option" data-value="Январь 2022" data-index="2">
                           Январь 2022
                         </li>
-                        <li
-                          class="itc-select__option itc-select__option_selected"
-                          data-select="option"
-                          data-value="Февраль 2022"
-                          data-index="3"
-                        >
+                        <li class="itc-select__option" data-select="option" data-value="Февраль 2022" data-index="3">
                           Февраль 2022
                         </li>
                         <li class="itc-select__option" data-select="option" data-value="Март 2022" data-index="4">
@@ -399,7 +310,7 @@
                     <button
                       type="button"
                       class="itc-select1__toggle"
-                      name="car"
+                      name="people"
                       value=""
                       data-select="toggle"
                       data-index="-1"
@@ -453,7 +364,7 @@
                     <button
                       type="button"
                       class="itc-select2__toggle"
-                      name="car"
+                      name="option"
                       value=""
                       data-select="toggle"
                       data-index="-1"
@@ -564,7 +475,6 @@
           </p>
         </div>
 
-        <!-- <div class="photo__slider-box"> -->
         <div class="photo__slider swiper">
           <div class="photo__slider-wrapper swiper-wrapper">
             <div class="photo__slide swiper-slide">
@@ -748,121 +658,16 @@
             </svg>
           </div>
         </div>
-        <!-- </div> -->
       </section>
-
-      <!-- <section class="booking" id="booking">
-        <div class="container booking__container">
-          <form action="" class="form">
-            <h2 class="form__title subtitle">Бронирование тура</h2>
-
-            <fieldset class="form__fieldset form__fieldset-select">
-              <label class="form__label form__label-select" tabindex="0">
-                Дата
-                <span class="form__label-placeholder">Выбери дату путешествия</span>
-
-                <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg>
-              </label>
-
-              <label class="form__label form__label-select" tabindex="0">
-                Люди
-                <span class="form__label-placeholder">Укажи количество человек</span>
-
-                <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg>
-              </label>
-
-              <label class="form__label form__label-select" tabindex="0">
-                Опции
-                <span class="form__label-placeholder">Выбери нужные опции</span>
-                
-                <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg>
-              </label>
-            </fieldset>
-
-            <fieldset class="form__fieldset form__fieldset-input">
-              <label class="form__label form__label-input" tabindex="0">
-                ФИО
-                <input type="text" class="form__input" placeholder="Введите ваше ФИО" />
-              </label>
-
-              <label class="form__label form__label-input" tabindex="0">
-                Email
-                <input type="text" class="form__input" placeholder="Введите адрес электронной почты" />
-              </label>
-
-              <label class="form__label form__label-input" tabindex="0">
-                Телефон
-                <input type="text" class="form__input" placeholder="Введите номер телефона" />
-              </label>
-            </fieldset>
-
-            <div class="form__submit-wrapper">
-              <div class="form__result-wrapper">
-                <span class="form__result-content">24 ноября - 7 декабря, 4 человека</span>
-                <span class="form__result-total">459 590₽</span>
-              </div>
-
-              <button class="form__submit button" type="submit">Забронировать</button>
-            </div>
-          </form>
-        </div>
-      </section> -->
 
       <section class="booking" id="booking">
         <div class="container booking__container">
-          <form action="" class="form">
+          <form class="form" id="form" method="post">
             <h2 class="form__title subtitle">Бронирование тура</h2>
 
             <fieldset class="form__fieldset form__fieldset-select">
-              <label class="form__label form__label-select" tabindex="0">
+              <label class="form__label form__label-date form__label-select" data-select="toggle" tabindex="0">
                 Дата
-                <!-- <span class="form__label-placeholder">Выбери дату путешествия</span> -->
-
-                <!-- <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg> -->
 
                 <div class="itc-select" id="select-4">
                   <span class="itc-select__arrow">
@@ -879,16 +684,16 @@
                     </svg>
                   </span>
 
-                  <button
-                    type="button"
-                    class="itc-select__toggle"
-                    name="car"
+                  <input
+                    type="text"
+                    class="form__input-date itc-select__toggle"
+                    name="date"
                     value=""
                     data-select="toggle"
                     data-index="-1"
-                  >
-                    Выбери дату путешествия
-                  </button>
+                    placeholder="Выбери дату 
+                    путешествия"
+                  />
 
                   <div class="itc-select__dropdown">
                     <h3 class="itc-select__title">Свободные даты</h3>
@@ -903,12 +708,7 @@
                       <li class="itc-select__option" data-select="option" data-value="Январь 2022" data-index="2">
                         Январь 2022
                       </li>
-                      <li
-                        class="itc-select__option itc-select__option_selected"
-                        data-select="option"
-                        data-value="Февраль 2022"
-                        data-index="3"
-                      >
+                      <li class="itc-select__option" data-select="option" data-value="Февраль 2022" data-index="3">
                         Февраль 2022
                       </li>
                       <li class="itc-select__option" data-select="option" data-value="Март 2022" data-index="4">
@@ -942,22 +742,8 @@
                 </div>
               </label>
 
-              <label class="form__label form__label-select" tabindex="0">
+              <label class="form__label form__label-people form__label-select" data-select="toggle" tabindex="0">
                 Люди
-                <!-- <span class="form__label-placeholder">Укажи количество человек</span>
-
-                <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg> -->
 
                 <div class="itc-select5" id="select-5">
                   <span class="itc-select5__arrow">
@@ -974,16 +760,16 @@
                     </svg>
                   </span>
 
-                  <button
-                    type="button"
-                    class="itc-select5__toggle"
-                    name="car"
+                  <input
+                    type="number"
+                    class="form__input-people itc-select5__toggle"
+                    name="people"
                     value=""
                     data-select="toggle"
                     data-index="-1"
-                  >
-                    Укажи количество человек
-                  </button>
+                    placeholder="Укажи количество 
+                    человек"
+                  />
 
                   <div class="itc-select5__dropdown">
                     <ul class="itc-select5__options">
@@ -1010,22 +796,8 @@
                 </div>
               </label>
 
-              <label class="form__label form__label-select" tabindex="0">
+              <label class="form__label form__label-option form__label-select" data-select="toggle" tabindex="0">
                 Опции
-                <!-- <span class="form__label-placeholder">Выбери нужные опции</span>
-
-                <svg
-                  class="form__label-arrow"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z"
-                  />
-                </svg> -->
 
                 <div class="itc-select6" id="select-6">
                   <span class="itc-select6__arrow">
@@ -1042,41 +814,40 @@
                     </svg>
                   </span>
 
-                  <button
-                    type="button"
-                    class="itc-select6__toggle"
-                    name="car"
+                  <input
+                    type="text"
+                    class="form__input-option itc-select6__toggle"
+                    name="option"
                     value=""
                     data-select="toggle"
                     data-index="-1"
-                  >
-                    Выбери нужные опции
-                  </button>
+                    placeholder="Выбери нужные опции"
+                  />
 
                   <div class="itc-select6__dropdown">
                     <h3 class="itc-select6__title">Опции</h3>
 
-                    <ul class="itc-select6__options">
-                      <li class="itc-select6__option" data-select="checkbox">
+                    <fieldset class="itc-select6__options">
+                      <label class="itc-select6__option" data-select="checkbox">
                         <input type="checkbox" class="itc-select6__input" value="Няня" />
                         Няня
-                      </li>
+                      </label>
 
-                      <li class="itc-select6__option" data-select="checkbox">
+                      <label class="itc-select6__option" data-select="checkbox">
                         <input type="checkbox" class="itc-select6__input" value="Персональное меню" />
                         Персональное меню
-                      </li>
+                      </label>
 
-                      <li class="itc-select6__option" data-select="checkbox">
+                      <label class="itc-select6__option" data-select="checkbox">
                         <input type="checkbox" class="itc-select6__input" value="Персональный гид" />
                         Персональный гид
-                      </li>
+                      </label>
 
-                      <li class="itc-select6__option" data-select="checkbox">
+                      <label class="itc-select6__option" data-select="checkbox">
                         <input type="checkbox" class="itc-select6__input" value="Улучшенная палатка" />
                         Улучшенная палатка
-                      </li>
-                    </ul>
+                      </label>
+                    </fieldset>
 
                     <button class="itc-select6__btn" data-select="toggle" type="button">Готово</button>
                   </div>
@@ -1085,19 +856,29 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset-input">
-              <label class="form__label form__label-input" tabindex="0">
+              <label class="form__label form__label-name form__label-input" tabindex="0">
                 ФИО
-                <input type="text" class="form__input" placeholder="Введите ваше ФИО" />
+                <input class="form__input form__input-name" type="text" name="name" placeholder="Введите ваше ФИО" />
               </label>
 
-              <label class="form__label form__label-input" tabindex="0">
+              <label class="form__label form__label-mail form__label-input" tabindex="0">
                 Email
-                <input type="text" class="form__input" placeholder="Введите адрес электронной почты" />
+                <input
+                  class="form__input form__input-mail"
+                  type="email"
+                  name="mail"
+                  placeholder="Введите адрес электронной почты"
+                />
               </label>
 
-              <label class="form__label form__label-input" tabindex="0">
+              <label class="form__label form__label-phone form__label-input" tabindex="0">
                 Телефон
-                <input type="text" class="form__input" placeholder="Введите номер телефона" />
+                <input
+                  class="form__input form__input-phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите номер телефона"
+                />
               </label>
             </fieldset>
 
@@ -1235,8 +1016,8 @@
             Введите свой Email и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;течении&nbsp;3 рабочих дней
           </p>
 
-          <form action="" class="footer__form">
-            <input type="email" class="footer__form-input" placeholder="Введите адрес электронной почты" />
+          <form action="" class="footer__form" id="form1" method="post">
+            <input class="footer__form-input" name="email" type="email" placeholder="Введите адрес электронной почты" />
             <button class="footer__form-submit button" type="submit" aria-label="Кнопка отправки электронной почты">
               <svg viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path

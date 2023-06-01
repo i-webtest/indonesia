@@ -113,9 +113,6 @@
 
   &__list {
     position: relative;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 25px;
 
     &::before {
       content: '';
@@ -134,8 +131,6 @@
   }
 
   &__item {
-    // min-height: 21px;
-    // margin-bottom: 25px;
 
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -185,8 +180,6 @@
         transform: scale(1.7);
       }
     }
-
-    
   }
 
   &__item-text {
@@ -214,24 +207,8 @@
     @include desktop {
       max-width: 560px;
     }
-
-    // &.active {
-    //   min-height: 196px;
-
-    //   @include tablet {
-    //     min-height: 124px;
-    //   }
-
-    //   @include laptop {
-    //     min-height: 232px;
-    //   }
-    // }
   }
 }
-
-// .open {
-//   height: 196px;
-// }
 
 .hidden {
   display: none;

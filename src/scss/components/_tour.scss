@@ -203,7 +203,6 @@
     color: $white;
     padding: 8px 21px 15px;
     margin-bottom: 16px;
-    // cursor: pointer;
     outline: none;
 
     @include tablet {
@@ -216,10 +215,6 @@
       font-size: 16px;
       padding: 12px 0 0;
       margin-bottom: 0;
-
-      // &:last-child {
-      //   width: 138px;
-      // }
     }
 
     @include desktop {
@@ -350,17 +345,9 @@
   }
 
   &__form-date {
-    // position: absolute;
-    // inset: 0;
-    // background-color: transparent;
-    // border: none;
-    // outline: none;
-    // appearance: none;
     position: fixed;
     transform: scale(0);
   }
-
-  &__form-select {}
 
   &__button {
     display: block;

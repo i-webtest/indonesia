@@ -37,10 +37,6 @@
     &:active {
       color: $secondary;
     }
-
-    // &:checked .people__label {
-    //   color: $secondary;
-    // }
   }
 
   &__input {
@@ -54,9 +50,5 @@
 
   &__label {
     cursor: pointer;
-
-    // &:checked {
-    //   color: $secondary;
-    // }
   }
 }
