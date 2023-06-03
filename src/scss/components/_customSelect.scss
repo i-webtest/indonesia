@@ -1,22 +1,11 @@
 .itc-select {
   position: relative;
-  top: -12px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 5px;
-  width: 133px;
   cursor: pointer;
 
   @include tablet {
-    top: -9px;
-    gap: 4px;
     width: 100%;
-  }
-
-  @include laptop {
-    top: -12px;
-    gap: 0px;
   }
 
   &__toggle {
@@ -26,11 +15,13 @@
     width: 100%;
     height: 32px;
     color: $white;
+    opacity: 0.7;
     text-align: left;
     cursor: pointer;
     user-select: none;
 
     &:focus {
+
       outline: none;
     }
 
@@ -45,6 +36,9 @@
   }
 
   &__arrow {
+    position: absolute;
+    top: -26px;
+    right: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +48,8 @@
     border-radius: 50%;
 
     @include laptop {
-      position: relative;
-      top: 2px;
+      top: -20px;
+      right: 0;
     }
   }
 
@@ -154,23 +148,12 @@
 
 .itc-select1 {
   position: relative;
-  top: -12px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 5px;
-  width: 133px;
   cursor: pointer;
 
   @include tablet {
-    top: -10px;
-    gap: 3px;
     width: 100%;
-  }
-
-  @include laptop {
-    top: -13px;
-    gap: 0px;
   }
 
   &__toggle {
@@ -195,7 +178,9 @@
   }
 
   &__arrow {
-    position: relative;
+    position: absolute;
+    top: -26px;
+    right: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +190,8 @@
     border-radius: 50%;
 
     @include laptop {
-      top: 3px;
+      top: -20px;
+      right: 0;
     }
   }
 
@@ -262,23 +248,12 @@
 
 .itc-select2 {
   position: relative;
-  top: -12px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 5px;
-  width: 133px;
   cursor: pointer;
 
   @include tablet {
-    top: -9px;
-    gap: 3px;
     width: 100%;
-  }
-
-  @include laptop {
-    top: -12px;
-    gap: 0px;
   }
 
   &__toggle {
@@ -304,6 +279,9 @@
   }
 
   &__arrow {
+    position: absolute;
+    top: -26px;
+    right: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,8 +291,12 @@
     border-radius: 50%;
 
     @include laptop {
-      position: relative;
-      top: 3px;
+      top: -20px;
+      right: 10px;
+    }
+
+    @include desktop {
+      right: 0;
     }
   }
 
@@ -409,29 +391,28 @@
       line-height: 130%;
       color: #AFAFAF;
       opacity: 0.7;
-    }
 
-    @include tablet {
-      font-size: 14px;
-    }
-
-    @include laptop {
-      font-size: 16px;
+      @include tablet {
+        font-size: 14px;
+      }
+    
+      @include laptop {
+        font-size: 16px;
+      }
     }
   }
 
   & .itc-select__arrow {
-    position: relative;
-    top: 2px;
-    left: 2px;
+    position: absolute;
+    top: -25px;
 
     @include tablet {
-      top: 9px;
-      left: 4px;
+      top: -9px;
+      right: -5px;
     }
 
     @include laptop {
-      top: 3px;
+      top: -10px;
       font-size: 16px;
     }
   }
@@ -439,23 +420,15 @@
 
 .itc-select5 {
   position: relative;
-  top: -12px;
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
   gap: 5px;
   width: 133px;
   cursor: pointer;
 
   @include tablet {
-    top: -10px;
     gap: 3px;
     width: 100%;
-  }
-
-  @include laptop {
-    top: -13px;
-    gap: 0px;
   }
 
   &__toggle {
@@ -485,9 +458,9 @@
   }
 
   &__arrow {
-    position: relative;
-    top: 2px;
-    left: 7px;
+    position: absolute;
+    top: -25px;
+    right: -7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,12 +470,13 @@
     border-radius: 50%;
 
     @include tablet {
-      top: 10px;
-      left: 4px;
+      top: -8px;
+      right: -5px;
     }
 
     @include laptop {
-      top: 3px;
+      top: -10px;
+      right: -4px;
     }
   }
 
@@ -556,34 +530,30 @@
     font-size: 18px;
     color: $secondary;
   }
+
+  & [type=number]::-webkit-inner-spin-button {
+    display: none;
+    // appearance: none;
+  }
 }
 
 .itc-select6 {
   position: relative;
-  top: -12px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 5px;
   width: 133px;
   cursor: pointer;
 
   @include tablet {
-    top: -9px;
     gap: 3px;
     width: 100%;
-  }
-
-  @include laptop {
-    top: -12px;
-    gap: 0px;
   }
 
   &__toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 125px;
+    width: 100%;
     height: 32px;
     color: $primary;
     text-align: left;
@@ -607,9 +577,9 @@
   }
 
   &__arrow {
-    position: relative;
-    top: 2px;
-    left: 6px;
+    position: absolute;
+    top: -24px;
+    right: -7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,13 +589,13 @@
     border-radius: 50%;
 
     @include tablet {
-      top: 9px;
-      left: 4px;
+      top: -8px;
+      right: -5px;
     }
 
     @include laptop {
-      position: relative;
-      top: 3px;
+      top: -10px;
+      right: -4px;
     }
   }
 

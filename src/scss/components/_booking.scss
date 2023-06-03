@@ -4,7 +4,7 @@
 
   @include tablet {
     padding-top: 39px;
-    padding-bottom: 100px;
+    padding-bottom: 101px;
   }
 
   @include laptop {
@@ -34,7 +34,7 @@
   @include laptop {
     max-width: 940px;
     border-radius: 30px;
-    padding: 60px 80px 69px 80px;
+    padding: 60px 80px 68px 80px;
   }
 
   @include desktop {
@@ -88,12 +88,14 @@
   &__label {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
     background: rgba(255, 255, 255, 0.72);
     border: 1px solid $border;
     border-radius: 8px;
+    cursor: pointer;
 
     &:disabled {
       color: $border;
@@ -111,9 +113,14 @@
       border-color: $secondary;
     }
 
-    
+    &:focus .itc-select__arrow,
+    &:focus .itc-select5__arrow,
+    &:focus .itc-select6__arrow {
+      color: $secondary;
+    }
 
     @include tablet {
+      gap: 8px;
       font-size: 14px;
     }
 
@@ -127,10 +134,12 @@
   &__label-select {
     position: relative;
     outline: none;
-    padding: 8px 15px 0 9px;
+    padding: 8px 15px 13px 9px;
+
+    
 
     &:nth-child(1) {
-      padding: 8px 11px 0 14px;
+      padding: 8px 11px 13px 14px;
 
       @include tablet {
         padding: 12px 15px 18px 13px;
@@ -140,6 +149,8 @@
       @include laptop {
         padding: 12px 16px 12px 13px;
       }
+
+        
     }
 
     &:nth-child(2) {
@@ -244,13 +255,13 @@
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 
     @include tablet {
       flex-wrap: wrap;
       gap: 30px 18px;
       width: 100%;
-      margin-bottom: 22px;
+      margin-bottom: 25px;
     }
 
     @include laptop {
@@ -265,8 +276,8 @@
   }
 
   &__label-input {
-    padding: 7px 8px 13px;
-    gap: 8px;
+    padding: 7px 8px 11px;
+    gap: 11px;
     outline: none;
 
     @include laptop {
@@ -276,7 +287,7 @@
     &:nth-child(1) {
       @include tablet {
         width: 100%;
-        padding: 11px 13px 18px;
+        padding: 11px 13px 15px;
       }
 
       @include laptop {
@@ -287,7 +298,7 @@
     &:nth-child(2) {
       @include tablet {
         flex-basis: 280px;
-        padding: 12px 13px 20px;
+        padding: 12px 13px 13px;
       }
 
       @include laptop {
@@ -299,7 +310,7 @@
     &:nth-child(3) {
       @include tablet {
         flex-basis: 280px;
-        padding: 12px 20px 20px;
+        padding: 12px 20px 13px;
       }
 
       @include laptop {
@@ -312,7 +323,7 @@
   &__input {
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 5px 5px 5px 0;
     
     &::placeholder {
       font-weight: 300;

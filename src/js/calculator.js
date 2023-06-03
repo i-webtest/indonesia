@@ -1,4 +1,3 @@
-const select1 = document.querySelector('#select-1');
 const selectToggle1 = document.querySelector('#select-1 .itc-select__toggle');
 const selectToggle2 = document.querySelector('#select-2 .itc-select1__toggle');
 const selectToggle3 = document.querySelector('#select-3 .itc-select2__toggle');
@@ -10,11 +9,16 @@ const selectInput6 = document.querySelectorAll('.itc-select6__input');
 
 const input4 = document.querySelector('#select-4 input');
 
+const select1 = document.querySelector('#select-1');
 const select2 = document.querySelector('#select-2');
 const select3 = document.querySelector('#select-3');
 const select4 = document.querySelector('#select-4');
 const select5 = document.querySelector('#select-5');
 const select6 = document.querySelector('#select-6');
+
+const labelDate = document.querySelector('.tour__form-label_date');
+const labelPeople = document.querySelector('.tour__form-label_people');
+const labelOption = document.querySelector('.tour__form-label_option');
 
 const btn = document.querySelector('.itc-select2__toggle');
 const option = document.querySelectorAll('.itc-select2__option');

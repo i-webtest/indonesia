@@ -217,23 +217,10 @@
                   Дата
 
                   <div class="itc-select" id="select-1">
-                    <span class="itc-select__arrow">
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
-                        />
-                      </svg>
-                    </span>
-
                     <button
                       type="button"
                       class="itc-select__toggle"
+                      id="tour-date"
                       name="date"
                       value=""
                       data-select="toggle"
@@ -286,14 +273,8 @@
 
                       <button class="itc-select__btn" type="button" data-select="toggle">Готово</button>
                     </div>
-                  </div>
-                </label>
 
-                <label class="tour__form-label tour__form-label_people" data-select="toggle" tabindex="0">
-                  Люди
-
-                  <div class="itc-select1" id="select-2">
-                    <span class="itc-select1__arrow">
+                    <span class="itc-select__arrow">
                       <svg
                         width="14"
                         height="14"
@@ -306,7 +287,13 @@
                         />
                       </svg>
                     </span>
+                  </div>
+                </label>
 
+                <label class="tour__form-label tour__form-label_people" data-select="toggle" tabindex="0">
+                  Люди
+
+                  <div class="itc-select1" id="select-2">
                     <button
                       type="button"
                       class="itc-select1__toggle"
@@ -340,14 +327,8 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
-                </label>
 
-                <label class="tour__form-label tour__form-label_options" data-select="toggle" tabindex="0">
-                  Опции
-
-                  <div class="itc-select2" id="select-3">
-                    <span class="itc-select2__arrow">
+                    <span class="itc-select1__arrow">
                       <svg
                         width="14"
                         height="14"
@@ -360,7 +341,13 @@
                         />
                       </svg>
                     </span>
+                  </div>
+                </label>
 
+                <label class="tour__form-label tour__form-label_options" data-select="toggle" tabindex="0">
+                  Опции
+
+                  <div class="itc-select2" id="select-3">
                     <button
                       type="button"
                       class="itc-select2__toggle"
@@ -399,6 +386,20 @@
 
                       <button class="itc-select2__btn" data-select="toggle" type="button">Готово</button>
                     </div>
+
+                    <span class="itc-select2__arrow">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
+                        />
+                      </svg>
+                    </span>
                   </div>
                 </label>
               </fieldset>
@@ -670,20 +671,6 @@
                 Дата
 
                 <div class="itc-select" id="select-4">
-                  <span class="itc-select__arrow">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
-                      />
-                    </svg>
-                  </span>
-
                   <input
                     type="text"
                     class="form__input-date itc-select__toggle"
@@ -691,8 +678,7 @@
                     value=""
                     data-select="toggle"
                     data-index="-1"
-                    placeholder="Выбери дату 
-                    путешествия"
+                    placeholder="Выбери дату путешествия"
                   />
 
                   <div class="itc-select__dropdown">
@@ -739,14 +725,8 @@
 
                     <button class="itc-select__btn" type="button" data-select="toggle">Готово</button>
                   </div>
-                </div>
-              </label>
 
-              <label class="form__label form__label-people form__label-select" data-select="toggle" tabindex="0">
-                Люди
-
-                <div class="itc-select5" id="select-5">
-                  <span class="itc-select5__arrow">
+                  <span class="itc-select__arrow">
                     <svg
                       width="14"
                       height="14"
@@ -759,7 +739,13 @@
                       />
                     </svg>
                   </span>
+                </div>
+              </label>
 
+              <label class="form__label form__label-people form__label-select" data-select="toggle" tabindex="0">
+                Люди
+
+                <div class="itc-select5" id="select-5">
                   <input
                     type="number"
                     class="form__input-people itc-select5__toggle"
@@ -793,14 +779,8 @@
                       </li>
                     </ul>
                   </div>
-                </div>
-              </label>
 
-              <label class="form__label form__label-option form__label-select" data-select="toggle" tabindex="0">
-                Опции
-
-                <div class="itc-select6" id="select-6">
-                  <span class="itc-select6__arrow">
+                  <span class="itc-select5__arrow">
                     <svg
                       width="14"
                       height="14"
@@ -813,7 +793,13 @@
                       />
                     </svg>
                   </span>
+                </div>
+              </label>
 
+              <label class="form__label form__label-option form__label-select" data-select="toggle" tabindex="0">
+                Опции
+
+                <div class="itc-select6" id="select-6">
                   <input
                     type="text"
                     class="form__input-option itc-select6__toggle"
@@ -851,6 +837,20 @@
 
                     <button class="itc-select6__btn" data-select="toggle" type="button">Готово</button>
                   </div>
+
+                  <span class="itc-select6__arrow">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29367 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458V4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458V4.29458Z"
+                      />
+                    </svg>
+                  </span>
                 </div>
               </label>
             </fieldset>
@@ -1016,7 +1016,7 @@
             Введите свой Email и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;течении&nbsp;3 рабочих дней
           </p>
 
-          <form action="" class="footer__form" id="form1" method="post">
+          <form class="footer__form" id="form1" method="post">
             <input class="footer__form-input" name="email" type="email" placeholder="Введите адрес электронной почты" />
             <button class="footer__form-submit button" type="submit" aria-label="Кнопка отправки электронной почты">
               <svg viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

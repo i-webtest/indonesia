@@ -154,10 +154,10 @@
   &__form-form {
     background-color: rgba(33, 25, 25, 0.78);
     border-radius: 10px;
-    padding: 8px 15px 25px;
+    padding: 16px 34px 25px;
 
     @include tablet {
-      padding: 20px 11px 30px 30px;
+      padding: 28px 30px 30px 40px;
     }
 
     @include laptop {
@@ -165,24 +165,29 @@
       gap: 23px;
       justify-content: space-between;
       border-radius: 16px;
-      padding: 23px 20px 12px;
+      padding: 35px 20px 24px;
     }
 
     @include desktop {
       border-radius: 20px;
-      padding: 23px 38px 12px 40px;
+      padding: 35px 38px 24px 40px;
     }
   }
 
   &__form-fieldset {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    margin-bottom: 40px;
 
     @include tablet {
-      margin-bottom: 15px;
+      gap: 52px;
+      margin-bottom: 40px;
     }
 
     @include laptop {
       display: flex;
+      flex-direction: row;
       gap: 37px;
       margin-bottom: 0;
     }
@@ -198,22 +203,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    gap: 15px;
     font-weight: 700;
     line-height: 130%;
     color: $white;
-    padding: 8px 21px 15px;
-    margin-bottom: 16px;
     outline: none;
+    cursor: pointer;
 
     @include tablet {
-      margin-bottom: 20px;
+      padding-left: 10px;
     }
 
     @include laptop {
-      gap: 6px;
+      gap: 18px;
       width: 155px;
       font-size: 16px;
-      padding: 12px 0 0;
+      padding-left: 0;
       margin-bottom: 0;
     }
 
@@ -269,61 +274,29 @@
       color: $secondary;
     }
 
-    &:active, .itc-select__toggle:active {
+    &:active, &:active .itc-select__toggle {
       color: $secondary;
     }
 
-    &:active, .itc-select1__toggle:active {
+    &:active, &:active .itc-select1__toggle {
       color: $secondary;
     }
 
-    &:active, .itc-select2__toggle:active {
+    &:active, &:active .itc-select2__toggle {
       color: $secondary;
     }
-    
-  }
 
-  &__form-label:hover .tour__form-arrow {
-    color: $secondary;
-  }
-
-  &__form-label:focus .tour__form-arrow {
-    color: $secondary;
-  }
-
-  &__form-label_date {
-    padding: 8px 21px 13px 21px;
-
-    @include tablet {
-      padding: 8px 16px 13px 21px;
-    }
-
-    @include laptop {
-      padding: 13px 0px 0px 0px;
-    }
-  }
-
-  &__form-label_people {
-    padding: 8px 21px 11px 21px;
-
-    @include tablet {
-      padding: 8px 16px 11px 21px;
-    }
-
-    @include laptop {
-      padding: 13px 0px 0px 0px;
+    &:active .itc-select__arrow, 
+    &:active .itc-select1__arrow,
+    &:active .itc-select2__arrow {
+      background-color: transparent;
     }
   }
 
   &__form-label_options {
-    
-    @include tablet {
-      padding: 8px 16px 15px 21px;
-    }
 
     @include laptop {
-      width: 142px;
-      padding: 13px 0px 0px 0px;
+      width: 152px;
     }
   }
 
@@ -358,7 +331,6 @@
 
     @include tablet {
       position: relative;
-      right: 5px;
       width: 169px;
       padding: 11px 20px 9px;
     }
