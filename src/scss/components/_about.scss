@@ -58,6 +58,10 @@
 
     &:not(:last-child) {
       margin-bottom: 25px;
+
+      @include laptop {
+        margin-bottom: 0;
+      }
     }
 
     &:last-child {
